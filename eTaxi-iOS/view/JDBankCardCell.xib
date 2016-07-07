@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell0" rowHeight="110" id="KGk-i7-Jjw" customClass="JDBankCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yj3-UE-Jmk">
+                        <rect key="frame" x="8" y="15" width="304" height="94"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="94" id="evf-I1-w0F"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="Bank_of_Communications"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Yj3-UE-Jmk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HPZ-8g-BnL"/>
+                    <constraint firstAttribute="trailing" secondItem="Yj3-UE-Jmk" secondAttribute="trailing" constant="8" id="USk-Gh-vSb"/>
+                    <constraint firstAttribute="bottom" secondItem="Yj3-UE-Jmk" secondAttribute="bottom" id="cVA-j2-rpT"/>
+                    <constraint firstItem="Yj3-UE-Jmk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="pD1-1f-g02"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="HPZ-8g-BnL"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bankCardButton" destination="Yj3-UE-Jmk" id="yFE-7b-NXa"/>
+            </connections>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="82" id="VaV-M6-z6I" customClass="JDBankCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VaV-M6-z6I" id="NTZ-SM-yNm">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6H-yr-bp8">
+                        <rect key="frame" x="8" y="15" width="304" height="66"/>
+                        <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="66" id="J76-Ad-gWK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYH-jE-fdJ">
+                        <rect key="frame" x="93" y="30" width="22" height="36"/>
+                        <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="26"/>
+                        <color key="textColor" red="0.38431372549999998" green="0.38431372549999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmh-fz-4ld">
+                        <rect key="frame" x="118" y="37" width="85" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.38431372549999998" green="0.38431372549999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Q6H-yr-bp8" secondAttribute="bottom" id="DsQ-kS-BcH"/>
+                    <constraint firstItem="rYH-jE-fdJ" firstAttribute="centerY" secondItem="pmh-fz-4ld" secondAttribute="centerY" id="F8s-w2-orj"/>
+                    <constraint firstItem="pmh-fz-4ld" firstAttribute="centerX" secondItem="NTZ-SM-yNm" secondAttribute="centerX" id="NZK-td-hlG"/>
+                    <constraint firstAttribute="trailing" secondItem="Q6H-yr-bp8" secondAttribute="trailing" constant="8" id="O0f-1v-FYQ"/>
+                    <constraint firstItem="pmh-fz-4ld" firstAttribute="leading" secondItem="rYH-jE-fdJ" secondAttribute="trailing" constant="3" id="ib3-rI-f5k"/>
+                    <constraint firstItem="Q6H-yr-bp8" firstAttribute="leading" secondItem="NTZ-SM-yNm" secondAttribute="leading" constant="8" id="jcK-iq-1VK"/>
+                    <constraint firstItem="pmh-fz-4ld" firstAttribute="centerY" secondItem="Q6H-yr-bp8" secondAttribute="centerY" id="k5p-oc-TOM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addBankCardButton" destination="Q6H-yr-bp8" id="Ael-SW-0Qb"/>
+            </connections>
+            <point key="canvasLocation" x="343" y="548"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Bank_of_Communications" width="335" height="94"/>
+    </resources>
+</document>

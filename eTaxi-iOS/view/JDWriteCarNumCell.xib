@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="JDWriteCarNumCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="273" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBm-jQ-DkH">
+                        <rect key="frame" x="18" y="17" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s3a-EI-6B8">
+                        <rect key="frame" x="106" y="19" width="124" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="s3a-EI-6B8" firstAttribute="leading" secondItem="EBm-jQ-DkH" secondAttribute="trailing" constant="46" id="kFc-gR-s9e"/>
+                    <constraint firstItem="s3a-EI-6B8" firstAttribute="centerY" secondItem="EBm-jQ-DkH" secondAttribute="centerY" id="lE1-eC-0L9"/>
+                    <constraint firstItem="EBm-jQ-DkH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="oim-48-eXc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="s3a-EI-6B8" secondAttribute="trailing" constant="35" id="rP2-mh-xsz"/>
+                    <constraint firstItem="EBm-jQ-DkH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="yY7-NN-yKG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailTextField" destination="s3a-EI-6B8" id="Kle-pY-wol"/>
+                <outlet property="nextButton" destination="Z8e-vJ-teb" id="v8A-dP-yeV"/>
+                <outlet property="titleLabel" destination="EBm-jQ-DkH" id="CYx-QL-a0w"/>
+            </connections>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="qd3-6H-5ME">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qd3-6H-5ME" id="ThZ-Ud-pue">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8e-vJ-teb">
+                        <rect key="frame" x="30" y="0.0" width="260" height="49"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <state key="normal" title="下一步">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Z8e-vJ-teb" secondAttribute="bottom" id="dKp-SE-yt6"/>
+                    <constraint firstAttribute="trailing" secondItem="Z8e-vJ-teb" secondAttribute="trailing" constant="30" id="e7f-L2-mrE"/>
+                    <constraint firstItem="Z8e-vJ-teb" firstAttribute="leading" secondItem="ThZ-Ud-pue" secondAttribute="leading" constant="30" id="o0r-Tq-YEH"/>
+                    <constraint firstItem="Z8e-vJ-teb" firstAttribute="top" secondItem="ThZ-Ud-pue" secondAttribute="top" id="zcB-5U-rYj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="354.5" y="535"/>
+        </tableViewCell>
+    </objects>
+</document>

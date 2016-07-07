@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>sections</key>
+	<array>
+		<array>
+			<dict>
+				<key>class</key>
+				<string>JDRechargeViewController</string>
+				<key>title</key>
+				<string>充值</string>
+				<key>image</key>
+				<string>recharge</string>
+			</dict>
+			<dict>
+				<key>class</key>
+				<string>JDOutputViewController</string>
+				<key>title</key>
+				<string>提现</string>
+				<key>image</key>
+				<string>Withdraw</string>
+			</dict>
+			<dict>
+				<key>class</key>
+				<string>JDExchangeCreditsViewController</string>
+				<key>title</key>
+				<string>兑换积分</string>
+				<key>image</key>
+				<string>credits-exchange</string>
+			</dict>
+		</array>
+		<array>
+			<dict>
+				<key>class</key>
+				<string>JDBankCardViewController</string>
+				<key>title</key>
+				<string>银行卡</string>
+				<key>image</key>
+				<string>bank-card</string>
+			</dict>
+		</array>
+	</array>
+</dict>
+</plist>
